@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://jxdg58q64wmw"]
+
+[ext_resource type="Script" uid="uid://dyrifqxrqmh2m" path="res://Scripts/MainLevel.gd" id="1_8vsrk"]
+[ext_resource type="Texture2D" uid="uid://bs1s024acasa5" path="res://Assets/Sprites/PlainEgg_Crack_00.png" id="1_r7jfx"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("_eggArea", "_eggSprite")]
+script = ExtResource("1_8vsrk")
+_eggArea = NodePath("Area2D Egg Hitbox")
+_eggSprite = NodePath("Sprite2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r7jfx")
+
+[node name="Area2D Egg Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D Egg Hitbox"]
+position = Vector2(0, -339)
+polygon = PackedVector2Array(0, -1, 80, 30, 166, 116, 235, 249, 255, 393, 216, 597, 65, 694, -86, 685, -224, 584, -253, 411, -229, 239, -161, 103, -72, 21)
