@@ -5,7 +5,8 @@ class_name MainLevel
 @export var _eggSprite: Sprite2D
 
 var _eggHovered: bool = false
-
+var _eggStateId: Enums.EggStateId = Enums.EggStateId.Zero
+var _eggId: Enums.EggId = Enums.EggId.PlaceHolder
 
 func _ready() -> void:
 	_eggArea.mouse_entered.connect(func():
@@ -17,11 +18,25 @@ func _ready() -> void:
 
 
 func _HandleClick() -> void:
-	_eggSprite.texture = _GetTexture()
+	_eggSprite.texture = _GetTexture(_eggId, _eggStateId)
 
 
 # TODO: Implement
-func _GetTexture() -> Texture2D:
+func _GetTexture(eggId: Enums.EggId, eggState: Enums.EggStateId) -> Texture2D:
+	match _eggId:
+		Enums.EggId.PlaceHolder:
+			match _eggStateId: 
+				Enums.EggStateId.Zero: 
+					return Texture2D.new() 
+				Enums.EggStateId.One:
+					return Texture2D.new()
+				Enums.EggStateId.Two:
+					return Texture2D.new()
+				Enums.EggStateId.Three:
+					return Texture2D.new()
+				Enums.EggStateId.Four:
+					return Texture2D.new()
+	
 	return Texture2D.new()
 	
 	
