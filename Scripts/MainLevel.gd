@@ -74,6 +74,6 @@ func _HandleMouseInput(event) -> void:
 
 		if not _eggHovered:
 			return
-
+		_HandleClick()
 		print("Egg clicked")			
 		
