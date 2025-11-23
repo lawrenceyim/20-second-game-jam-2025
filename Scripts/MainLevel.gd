@@ -11,19 +11,26 @@ var _eggId: Enums.EggId           = Enums.EggId.Plain
 
 
 func _ready() -> void:
-	_eggArea.mouse_entered.connect(func():
-		_eggHovered = true
-	)
-	_eggArea.mouse_exited.connect(func():
-		_eggHovered = false
-	)
+	_eggArea.mouse_entered.connect(func(): _eggHovered = true)
+	_eggArea.mouse_exited.connect(func(): _eggHovered = false)
 
 
 func _HandleClick() -> void:
+	_IncrementEggState()
 	_eggSprite.texture = _GetTexture(_eggId, _eggStateId)
+	if (_eggStateId == Enums.EggStateId.Broken):
+		# TODO: Handle egg breaking
+		pass
 
 
-# TODO: Implement
+func _IncrementEggState() -> void:
+	match _eggStateId:
+		Enums.EggStateId.Broken:
+			pass
+		_:
+			_eggStateId = (_eggStateId + 1) as Enums.EggStateId
+
+
 func _GetTexture(eggId: Enums.EggId, eggState: Enums.EggStateId) -> Texture2D:
 	match eggId:
 		Enums.EggId.Plain:
