@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs1s024acasa5"
-path="res://.godot/imported/PlainEgg_Crack_00.png-4a393980aa31fcb8c5d585b3abf7bed1.ctex"
+uid="uid://fg0u1gww0hmh"
+path="res://.godot/imported/BrownEgg_Crack_01.png-76c2a45f599ab892d581b33fffb30bbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/PlainEgg_Crack_00.png"
-dest_files=["res://.godot/imported/PlainEgg_Crack_00.png-4a393980aa31fcb8c5d585b3abf7bed1.ctex"]
+source_file="res://Assets/Sprites/Brown Spotted Egg/Individual States/BrownEgg_Crack_01.png"
+dest_files=["res://.godot/imported/BrownEgg_Crack_01.png-76c2a45f599ab892d581b33fffb30bbf.ctex"]
 
 [params]
 

@@ -1,0 +1,50 @@
+[gd_scene load_steps=23 format=3 uid="uid://cq4iyo8hhye60"]
+
+[ext_resource type="Script" uid="uid://cnjmh4n41e4qd" path="res://Scripts/TextureRepository.gd" id="1_7v4o5"]
+[ext_resource type="Texture2D" uid="uid://bs1s024acasa5" path="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_00.png" id="2_jwdlk"]
+[ext_resource type="Texture2D" uid="uid://bctm6w8lksefk" path="res://Assets/Sprites/Plain Egg/Plainegg_Crack_01.png" id="3_vfxca"]
+[ext_resource type="Texture2D" uid="uid://bwghqrwp83buu" path="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_02.png" id="4_3ifau"]
+[ext_resource type="Texture2D" uid="uid://bvun0184iyvim" path="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_03.png" id="5_i0862"]
+[ext_resource type="Texture2D" uid="uid://b4xlni0p2r7qk" path="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_04.png" id="6_r3ini"]
+[ext_resource type="Texture2D" uid="uid://0yp08rt3t64d" path="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_05.png" id="7_l8skd"]
+[ext_resource type="Texture2D" uid="uid://dwuvomtytqpva" path="res://Assets/Sprites/Plain Egg/PlainEgg-Halves.png" id="8_vfxca"]
+[ext_resource type="Texture2D" uid="uid://e3ar8dlakn5k" path="res://Assets/Sprites/Brown Spotted Egg/Individual States/BrownEgg_Crack_00.png" id="9_3ifau"]
+[ext_resource type="Texture2D" uid="uid://fg0u1gww0hmh" path="res://Assets/Sprites/Brown Spotted Egg/Individual States/BrownEgg_Crack_01.png" id="10_28juv"]
+[ext_resource type="Texture2D" uid="uid://po3jrta1t6tx" path="res://Assets/Sprites/Brown Spotted Egg/Individual States/BrownEgg_Crack_02.png" id="11_6tjga"]
+[ext_resource type="Texture2D" uid="uid://hfsyingfqe5h" path="res://Assets/Sprites/Brown Spotted Egg/Individual States/BrownEgg_Crack_03.png" id="12_pgj0d"]
+[ext_resource type="Texture2D" uid="uid://cjw5m5hu25sk7" path="res://Assets/Sprites/Brown Spotted Egg/Individual States/BrownEgg_Crack_04.png" id="13_vhkgs"]
+[ext_resource type="Texture2D" uid="uid://bickldwpaptv3" path="res://Assets/Sprites/Brown Spotted Egg/Individual States/BrownEgg_Crack_05.png" id="14_ogld5"]
+[ext_resource type="Texture2D" uid="uid://c42aebavgqfyh" path="res://Assets/Sprites/Brown Spotted Egg/BrownEgg_Halves.png" id="15_cnd8a"]
+[ext_resource type="Texture2D" uid="uid://dtgxa0nop5hag" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_00.png" id="16_cp72o"]
+[ext_resource type="Texture2D" uid="uid://dofldsub0g6iu" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_01.png" id="17_gm1es"]
+[ext_resource type="Texture2D" uid="uid://cy2l0h4vgojwj" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_02.png" id="18_5m3vs"]
+[ext_resource type="Texture2D" uid="uid://cpsdv8krybj7e" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_03.png" id="19_drjft"]
+[ext_resource type="Texture2D" uid="uid://2i85wdur1aq0" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_04.png" id="20_3boxj"]
+[ext_resource type="Texture2D" uid="uid://cmu271spofk5d" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_05.png" id="21_d4jys"]
+[ext_resource type="Texture2D" uid="uid://3nss845o328k" path="res://Assets/Sprites/Easter Egg/EasterEgg_Halves.png" id="22_djvc1"]
+
+[node name="TextureRepository" type="Node"]
+script = ExtResource("1_7v4o5")
+_textures = Dictionary[int, Texture2D]({
+0: ExtResource("2_jwdlk"),
+1: ExtResource("3_vfxca"),
+2: ExtResource("4_3ifau"),
+3: ExtResource("5_i0862"),
+4: ExtResource("6_r3ini"),
+5: ExtResource("7_l8skd"),
+6: ExtResource("8_vfxca"),
+7: ExtResource("9_3ifau"),
+8: ExtResource("10_28juv"),
+9: ExtResource("11_6tjga"),
+10: ExtResource("12_pgj0d"),
+11: ExtResource("13_vhkgs"),
+12: ExtResource("14_ogld5"),
+13: ExtResource("15_cnd8a"),
+14: ExtResource("16_cp72o"),
+15: ExtResource("17_gm1es"),
+16: ExtResource("18_5m3vs"),
+17: ExtResource("19_drjft"),
+18: ExtResource("20_3boxj"),
+19: ExtResource("21_d4jys"),
+20: ExtResource("22_djvc1")
+})

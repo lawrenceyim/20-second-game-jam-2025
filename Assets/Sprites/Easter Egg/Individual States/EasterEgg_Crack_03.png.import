@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxpjlbcsuugh4"
-path="res://.godot/imported/PlainEgg_SpriteSheet.png-044c4af5394ae5a1650f138dedcaa511.ctex"
+uid="uid://cpsdv8krybj7e"
+path="res://.godot/imported/EasterEgg_Crack_03.png-2f66142e21ae6a1814ebf742a3d459cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/PlainEgg_SpriteSheet.png"
-dest_files=["res://.godot/imported/PlainEgg_SpriteSheet.png-044c4af5394ae5a1650f138dedcaa511.ctex"]
+source_file="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_03.png"
+dest_files=["res://.godot/imported/EasterEgg_Crack_03.png-2f66142e21ae6a1814ebf742a3d459cb.ctex"]
 
 [params]
 

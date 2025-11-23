@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0yp08rt3t64d"
-path="res://.godot/imported/PlainEgg_Crack_05.png-c18ce9e312fab07cdf2d7151209dca9d.ctex"
+uid="uid://bs1s024acasa5"
+path="res://.godot/imported/PlainEgg_Crack_00.png-68478cc91ef78c796bc8fb461d832557.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/PlainEgg_Crack_05.png"
-dest_files=["res://.godot/imported/PlainEgg_Crack_05.png-c18ce9e312fab07cdf2d7151209dca9d.ctex"]
+source_file="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_00.png"
+dest_files=["res://.godot/imported/PlainEgg_Crack_00.png-68478cc91ef78c796bc8fb461d832557.ctex"]
 
 [params]
 
