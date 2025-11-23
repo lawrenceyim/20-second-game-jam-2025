@@ -13,6 +13,7 @@ var _eggId: Enums.EggId           = Enums.EggId.Plain
 func _ready() -> void:
 	_eggArea.mouse_entered.connect(func(): _eggHovered = true)
 	_eggArea.mouse_exited.connect(func(): _eggHovered = false)
+	_GenerateRandomEgg()
 
 
 func _HandleClick() -> void:
@@ -29,6 +30,13 @@ func _IncrementEggState() -> void:
 			pass
 		_:
 			_eggStateId = (_eggStateId + 1) as Enums.EggStateId
+
+
+func _GenerateRandomEgg() -> void:
+	_eggStateId = Enums.EggStateId.Zero
+	var randomId: int = randi_range(0, Enums.EggId.size() - 1)
+	_eggId = randomId as Enums.EggId
+	_eggSprite.texture = _GetTexture(_eggId, _eggStateId)
 
 
 func _GetTexture(eggId: Enums.EggId, eggState: Enums.EggStateId) -> Texture2D:
