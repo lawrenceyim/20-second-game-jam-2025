@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cq4iyo8hhye60"]
+[gd_scene load_steps=35 format=3 uid="uid://cq4iyo8hhye60"]
 
 [ext_resource type="Script" uid="uid://cnjmh4n41e4qd" path="res://Scripts/TextureRepository.gd" id="1_7v4o5"]
 [ext_resource type="Texture2D" uid="uid://bs1s024acasa5" path="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_00.png" id="2_jwdlk"]
@@ -22,6 +22,18 @@
 [ext_resource type="Texture2D" uid="uid://2i85wdur1aq0" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_04.png" id="20_3boxj"]
 [ext_resource type="Texture2D" uid="uid://cmu271spofk5d" path="res://Assets/Sprites/Easter Egg/Individual States/EasterEgg_Crack_05.png" id="21_d4jys"]
 [ext_resource type="Texture2D" uid="uid://3nss845o328k" path="res://Assets/Sprites/Easter Egg/EasterEgg_Halves.png" id="22_djvc1"]
+[ext_resource type="Texture2D" uid="uid://bf2aiy14qguc3" path="res://Assets/Sprites/loot/plain egg loot/Bagel.webp" id="23_djvc1"]
+[ext_resource type="Texture2D" uid="uid://cii3qmicl7b1m" path="res://Assets/Sprites/loot/plain egg loot/Donut.webp" id="24_0pilo"]
+[ext_resource type="Texture2D" uid="uid://b8o1kxiqyiq1p" path="res://Assets/Sprites/loot/plain egg loot/Pancake.webp" id="25_hox0a"]
+[ext_resource type="Texture2D" uid="uid://bghbk53vpqm5d" path="res://Assets/Sprites/loot/plain egg loot/Toast.webp" id="26_2lkie"]
+[ext_resource type="Texture2D" uid="uid://cvsnw7pyji45d" path="res://Assets/Sprites/loot/plain egg loot/Waffle.webp" id="27_m6nl4"]
+[ext_resource type="Texture2D" uid="uid://d203nasmw81q1" path="res://Assets/Sprites/loot/plain egg loot/Yogurt.webp" id="28_w2b20"]
+[ext_resource type="Texture2D" uid="uid://7w7rdxa3y8yi" path="res://Assets/Sprites/loot/brown egg loot/Apron.png" id="29_xq7tv"]
+[ext_resource type="Texture2D" uid="uid://cuytj5cgst0mv" path="res://Assets/Sprites/loot/brown egg loot/MeasuringSpoons.webp" id="30_263kw"]
+[ext_resource type="Texture2D" uid="uid://bch8xbmb0b63v" path="res://Assets/Sprites/loot/brown egg loot/RollingPin.webp" id="31_amklg"]
+[ext_resource type="Texture2D" uid="uid://cpt2w76ikkadc" path="res://Assets/Sprites/loot/brown egg loot/SaltPepper.webp" id="32_oxhdu"]
+[ext_resource type="Texture2D" uid="uid://cl5u3ajsil68" path="res://Assets/Sprites/loot/brown egg loot/Spatula.webp" id="33_gi12i"]
+[ext_resource type="Texture2D" uid="uid://blk1uf70v7itn" path="res://Assets/Sprites/loot/brown egg loot/Toaster.webp" id="34_rg0ik"]
 
 [node name="TextureRepository" type="Node"]
 script = ExtResource("1_7v4o5")
@@ -46,5 +58,17 @@ _textures = Dictionary[int, Texture2D]({
 17: ExtResource("19_drjft"),
 18: ExtResource("20_3boxj"),
 19: ExtResource("21_d4jys"),
-20: ExtResource("22_djvc1")
+20: ExtResource("22_djvc1"),
+21: ExtResource("23_djvc1"),
+22: ExtResource("24_0pilo"),
+23: ExtResource("25_hox0a"),
+24: ExtResource("26_2lkie"),
+25: ExtResource("27_m6nl4"),
+26: ExtResource("28_w2b20"),
+27: ExtResource("29_xq7tv"),
+28: ExtResource("30_263kw"),
+29: ExtResource("31_amklg"),
+30: ExtResource("32_oxhdu"),
+31: ExtResource("33_gi12i"),
+32: ExtResource("34_rg0ik")
 })

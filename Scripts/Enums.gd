@@ -37,5 +37,17 @@ enum TextureId {
 	Easter3 = 17,
 	Easter4 = 18,
 	Easter5 = 19,
-	EasterBroken = 20
+	EasterBroken = 20,
+	PlainEggReward0 = 21,
+	PlainEggReward1 = 22,
+	PlainEggReward2 = 23,
+	PlainEggReward3 = 24,
+	PlainEggReward4 = 25,
+	PlainEggReward5 = 26,
+	BrownEggReward0 = 27,
+	BrownEggReward1 = 28,
+	BrownEggReward2 = 29,
+	BrownEggReward3 = 30,
+	BrownEggReward4 = 31,
+	BrownEggReward5 = 32,
 }
