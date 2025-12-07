@@ -4,6 +4,7 @@ class_name MainLevel
 @export var _eggArea: Area2D
 @export var _eggSprite: Sprite2D
 @export var _textureRepository: TextureRepository
+@export var _lootSprite: Sprite2D
 
 var _eggHovered: bool             = false
 var _eggStateId: Enums.EggStateId = Enums.EggStateId.Zero
@@ -13,21 +14,23 @@ var _eggId: Enums.EggId           = Enums.EggId.Plain
 func _ready() -> void:
 	_eggArea.mouse_entered.connect(func(): _eggHovered = true)
 	_eggArea.mouse_exited.connect(func(): _eggHovered = false)
+	_lootSprite.visible = false
 	_GenerateRandomEgg()
 
 
 func _HandleClick() -> void:
 	_IncrementEggState()
-	_eggSprite.texture = _GetTexture(_eggId, _eggStateId)
-	if (_eggStateId == Enums.EggStateId.Broken):
-		# TODO: Handle egg breaking
-		pass
+	_eggSprite.texture = _GetEggTexture(_eggId, _eggStateId)
 
 
 func _IncrementEggState() -> void:
 	match _eggStateId:
 		Enums.EggStateId.Broken:
 			pass
+		Enums.EggStateId.Five:
+			_lootSprite.texture = _GetRandomPrize(_eggId)
+			_lootSprite.visible = true
+			_eggStateId = (_eggStateId + 1) as Enums.EggStateId
 		_:
 			_eggStateId = (_eggStateId + 1) as Enums.EggStateId
 
@@ -36,10 +39,35 @@ func _GenerateRandomEgg() -> void:
 	_eggStateId = Enums.EggStateId.Zero
 	var randomId: int = randi_range(0, Enums.EggId.size() - 1)
 	_eggId = randomId as Enums.EggId
-	_eggSprite.texture = _GetTexture(_eggId, _eggStateId)
+	_eggSprite.texture = _GetEggTexture(_eggId, _eggStateId)
 
 
-func _GetTexture(eggId: Enums.EggId, eggState: Enums.EggStateId) -> Texture2D:
+func _GetRandomPrize(eggId: Enums.EggId) -> Texture2D:
+	match eggId:
+		Enums.EggId.Plain:
+			var value = randi_range(0, 5)
+			match value:
+				0: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward0)
+				1: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward1)
+				2: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward2)
+				3: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward3)
+				4: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward4)
+				5: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward5)
+		Enums.EggId.BrownSpotted:
+			var value = randi_range(0, 5)
+			match value:
+				0: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward0)
+				1: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward1)
+				2: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward2)
+				3: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward3)
+				4: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward4)
+				5: return _textureRepository.GetTexture(Enums.TextureId.PlainEggReward5)
+		_:
+			return Texture2D.new()
+	return Texture2D.new()
+
+
+func _GetEggTexture(eggId: Enums.EggId, eggState: Enums.EggStateId) -> Texture2D:
 	match eggId:
 		Enums.EggId.Plain:
 			match eggState:

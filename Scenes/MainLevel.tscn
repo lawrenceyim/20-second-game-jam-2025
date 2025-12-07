@@ -1,18 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://jxdg58q64wmw"]
+[gd_scene load_steps=5 format=3 uid="uid://jxdg58q64wmw"]
 
 [ext_resource type="Script" uid="uid://dyrifqxrqmh2m" path="res://Scripts/MainLevel.gd" id="1_8vsrk"]
 [ext_resource type="Texture2D" uid="uid://bs1s024acasa5" path="res://Assets/Sprites/Plain Egg/PlainEgg_Crack_00.png" id="1_r7jfx"]
 [ext_resource type="PackedScene" uid="uid://cq4iyo8hhye60" path="res://Scenes/TextureRepository.tscn" id="3_c77c4"]
+[ext_resource type="Texture2D" uid="uid://bf2aiy14qguc3" path="res://Assets/Sprites/loot/plain egg loot/Bagel.webp" id="4_o15vh"]
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("_eggArea", "_eggSprite", "_textureRepository")]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("_eggArea", "_eggSprite", "_textureRepository", "_lootSprite")]
 script = ExtResource("1_8vsrk")
 _eggArea = NodePath("Area2D Egg Hitbox")
-_eggSprite = NodePath("Sprite2D")
+_eggSprite = NodePath("Egg Sprite")
 _textureRepository = NodePath("TextureRepository")
+_lootSprite = NodePath("Loot Sprite")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Egg Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_r7jfx")
 
 [node name="Area2D Egg Hitbox" type="Area2D" parent="."]
@@ -22,3 +24,6 @@ position = Vector2(0, -339)
 polygon = PackedVector2Array(0, -1, 80, 30, 166, 116, 235, 249, 255, 393, 216, 597, 65, 694, -86, 685, -224, 584, -253, 411, -229, 239, -161, 103, -72, 21)
 
 [node name="TextureRepository" parent="." instance=ExtResource("3_c77c4")]
+
+[node name="Loot Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("4_o15vh")
